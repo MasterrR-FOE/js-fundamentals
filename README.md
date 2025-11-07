@@ -1,0 +1,1 @@
+In a learning process of softwaredevelopment, At a beginer stage right now, will keep posting updates as I keep levling up in my journey, so far I have made a little interactive web app on a local host. 
