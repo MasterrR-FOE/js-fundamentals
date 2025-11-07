@@ -1,9 +1,10 @@
-const name = "Alok";
-let age = 23;
-let favouriteLanguage = "python";
+let person = {
+  name: "Alok",
+  age: 25,
+  isStudent: true
+};
 
-function introduceYourself() {
-    console.log("Hi, My name is " + name + ". I am " + age + " years old an I love " + favouriteLanguage + "!" );
-           
-}
-introduceYourself();
+console.log(person);          // Prints the entire object
+console.log(person.name);     // "Alok"
+console.log(person.age);      // 25
+console.log(person.isStudent);// true
