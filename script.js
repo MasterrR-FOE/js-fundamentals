@@ -1,10 +1,27 @@
-let person = {
-  name: "Alok",
-  age: 25,
-  isStudent: true
-};
+// Select HTML elements
+let taskInput = document.getElementById("taskInput");
+let addTaskBtn = document.getElementById("addTaskBtn");
+let taskList = document.getElementById("taskList");
 
-console.log(person);          // Prints the entire object
-console.log(person.name);     // "Alok"
-console.log(person.age);      // 25
-console.log(person.isStudent);// true
+// Function to add a new task
+function addTask() {
+  let taskText = taskInput.value.trim(); // Get and clean input
+
+  if (taskText === "") {
+    alert("Please enter a task!");
+    return; // Stop if input is empty
+  }
+
+  // Create a new <li> element
+  let newTask = document.createElement("li");
+  newTask.textContent = taskText;
+
+  // Add task to the list
+  taskList.appendChild(newTask);
+
+  // Clear the input field
+  taskInput.value = "";
+}
+
+// Add event listener to the button
+addTaskBtn.addEventListener("click", addTask);
